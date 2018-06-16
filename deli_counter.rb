@@ -15,6 +15,7 @@ def line(katz_deli)
 end
 
 def take_a_number(katz_deli, customer)
+  # places customer at the end of line (array), calls the last element of the array and the length of the line (array)
   katz_deli << customer
   puts "Welcome, #{katz_deli[-1]}. You are number #{katz_deli.length} in line."
 end
