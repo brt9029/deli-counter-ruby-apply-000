@@ -1,5 +1,6 @@
 # Write your code here.
 katz_deli = []
+
 def line(katz_deli)
   # iterate through the line and returns customer's place in line
   # "The line is currently empty." if the line is empty
