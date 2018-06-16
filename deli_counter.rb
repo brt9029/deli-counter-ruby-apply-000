@@ -1,8 +1,8 @@
 # Write your code here.
 katz_deli = []
 def line(katz_deli)
-  # iterate through katz_deli array and puts place in line & customer
-  # "The line is currently empty." if there is noone in line
+  # iterate through the line and returns customer's place in line
+  # "The line is currently empty." if the line is empty
   if katz_deli.length > 0
     tlc = "The line is currently:"
     katz_deli.each_with_index do |person, number|
@@ -21,6 +21,7 @@ def take_a_number(katz_deli, customer)
 end
 
 def now_serving(customer)
+  # calls out customer at the beginning of the line (array) AND removes them
   if customer.length > 0 
     puts "Currently serving #{customer.shift}."
   else 
